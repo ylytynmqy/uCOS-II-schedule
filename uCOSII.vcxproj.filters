@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="App">
+      <UniqueIdentifier>{b51c4180-5a6c-469b-bbbb-c602e35e5978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uCOS-II">
+      <UniqueIdentifier>{bd8ae7b9-878e-4f01-b96c-a3032e83ec75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uCOS-II-Port">
+      <UniqueIdentifier>{7a83374a-3c86-46ad-8dc4-cbc61ff6b0c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\os_cfg.h">
+      <Filter>uCOS-II</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ucos_ii.h">
+      <Filter>uCOS-II</Filter>
+    </ClInclude>
+    <ClInclude Include="Ports\WIN32\os_cpu.h">
+      <Filter>uCOS-II-Port</Filter>
+    </ClInclude>
+    <ClInclude Include="Ports\WIN32\os_trace.h">
+      <Filter>uCOS-II-Port</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\os_dbg_r.c">
+      <Filter>uCOS-II</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ucos_ii.c">
+      <Filter>uCOS-II</Filter>
+    </ClCompile>
+    <ClCompile Include="Ports\WIN32\os_cpu_c.c">
+      <Filter>uCOS-II-Port</Filter>
+    </ClCompile>
+    <ClCompile Include="Ports\WIN32\os_trace.c">
+      <Filter>uCOS-II-Port</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

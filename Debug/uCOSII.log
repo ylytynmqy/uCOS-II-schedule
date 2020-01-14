@@ -1,0 +1,34 @@
+﻿  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /I.\ /I.\Source\ /I.\Ports\Win32\ /Zi /W3 /WX- /diagnostics:classic /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo".\Debug\\" /Fd".\Debug\vc141.pdb" /FR".\Debug\\" /Gd /TC /analyze- /FC /errorReport:prompt main.c Ports\WIN32\os_cpu_c.c Ports\WIN32\os_trace.c Source\os_dbg_r.c Source\ucos_ii.c
+cl : 命令行 warning D9035: “Gm”选项已否决，并将在将来的版本中移除
+  
+  ucos_ii.c
+d:\files\嵌入式导论\作业171250003\ucos-ii\ports\win32\os_cpu.h(45): warning C4005: “_WIN32_WINNT”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\sdkddkver.h(216): note: 参见“_WIN32_WINNT”的前一个定义
+  os_dbg_r.c
+d:\files\嵌入式导论\作业171250003\ucos-ii\ports\win32\os_cpu.h(45): warning C4005: “_WIN32_WINNT”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\sdkddkver.h(216): note: 参见“_WIN32_WINNT”的前一个定义
+  os_trace.c
+d:\files\嵌入式导论\作业171250003\ucos-ii\ports\win32\os_cpu.h(45): warning C4005: “_WIN32_WINNT”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\sdkddkver.h(216): note: 参见“_WIN32_WINNT”的前一个定义
+  os_cpu_c.c
+d:\files\嵌入式导论\作业171250003\ucos-ii\ports\win32\os_cpu.h(45): warning C4005: “_WIN32_WINNT”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\sdkddkver.h(216): note: 参见“_WIN32_WINNT”的前一个定义
+  main.c
+d:\files\嵌入式导论\作业171250003\ucos-ii\ports\win32\os_cpu.h(45): warning C4005: “_WIN32_WINNT”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\sdkddkver.h(216): note: 参见“_WIN32_WINNT”的前一个定义
+d:\files\嵌入式导论\作业171250003\ucos-ii\main.c(89): warning C4026: 使用形参表声明的函数
+d:\files\嵌入式导论\作业171250003\ucos-ii\main.c(107): warning C4026: 使用形参表声明的函数
+d:\files\嵌入式导论\作业171250003\ucos-ii\main.c(126): warning C4026: 使用形参表声明的函数
+  正在生成代码...
+  Microsoft (R) Incremental Linker Version 14.16.27034.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  "/OUT:.\Debug\uCOSII.exe" /INCREMENTAL WinMM.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST "/MANIFESTUAC:level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG "/PDB:.\Debug\uCOSII.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT "/IMPLIB:.\Debug\uCOSII.lib" /MACHINE:X86 /SAFESEH .\Debug\main.obj 
+  .\Debug\os_cpu_c.obj 
+  .\Debug\os_trace.obj 
+  .\Debug\os_dbg_r.obj 
+  .\Debug\ucos_ii.obj 
+  uCOSII.vcxproj -> D:\files\嵌入式导论\作业171250003\uCOS-II\.\Debug\uCOSII.exe
